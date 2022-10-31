@@ -1,9 +1,10 @@
-import { css } from '@emotion/react';
+import { style } from '@vanilla-extract/css';
 
 import { colors } from 'components/foundation';
 
+
 export const styles = {
-  nodeItem: css({
+  nodeItem: style({
     backgroundColor: colors.gray600,
     minHeight: 30,
   }),

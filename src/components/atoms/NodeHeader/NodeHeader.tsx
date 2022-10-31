@@ -1,4 +1,4 @@
-import { styles } from './NodeHeader.style';
+import { styles } from './NodeHeader.css';
 
 
 type Props = {
@@ -7,6 +7,6 @@ type Props = {
 
 export function NodeHeader({ label }: Props) {
   return (
-    <div css={styles.nodeHeader}>{label}</div>
+    <div className={styles.nodeHeader}>{label}</div>
   );
 }

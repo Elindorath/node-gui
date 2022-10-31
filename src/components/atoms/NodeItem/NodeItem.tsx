@@ -1,11 +1,11 @@
 import type { PropsWithChildren } from 'react';
 
-import { styles } from './NodeItem.style';
+import { styles } from './NodeItem.css';
 
 
 export function NodeItem({ children }: PropsWithChildren) {
   return (
-    <div css={styles.nodeItem}>
+    <div className={styles.nodeItem}>
       {children}
     </div>
   );

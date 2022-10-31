@@ -1,10 +1,10 @@
-import { css } from '@emotion/react';
+import { style } from '@vanilla-extract/css';
 
 import { colors } from 'components/foundation';
 
 
 export const styles = {
-  node: css({
+  node: style({
     display: 'inline-flex',
     flexDirection: 'column',
     borderRadius: 8,

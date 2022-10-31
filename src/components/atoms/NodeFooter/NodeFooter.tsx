@@ -1,7 +1,8 @@
-import { styles } from './NodeFooter.style';
+import { styles } from './NodeFooter.css';
+
 
 export function NodeFooter() {
   return (
-    <div css={styles.nodeFooter}></div>
+    <div className={styles.nodeFooter}></div>
   );
 }

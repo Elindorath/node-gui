@@ -1,18 +1,19 @@
 import { Handle, Position } from 'reactflow';
 
-import { styles } from './NodeInput.style';
+import { styles } from './NodeInput.css';
 
 
 type NodeInputProps = {
   label: string;
-  isForwardable: boolean;
+  isControllable: boolean;
+  isCustomizable?: boolean;
 };
 
-export function NodeInput({ label, isForwardable }: NodeInputProps) {
+export function NodeInput({ label, isControllable, isCustomizable }: NodeInputProps) {
   return (
-    <div css={styles.nodeInput}>
-      <div css={styles.nodeItemLabel}>{label}</div>
-      {isForwardable && <Handle type="target" position={Position.Left} id="label" css={styles.nodeItemHandle} />}
+    <div className={styles.nodeInput}>
+      <div className={styles.nodeItemLabel}>{label}</div>
+      {isControllable && <Handle type="target" position={Position.Left} id="label" className={styles.nodeItemHandle} />}
     </div>
   );
 }

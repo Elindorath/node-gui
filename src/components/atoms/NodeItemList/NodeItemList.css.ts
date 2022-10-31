@@ -1,17 +1,19 @@
-import { css } from '@emotion/react';
+import { style } from '@vanilla-extract/css';
+
 import { colors } from 'components/foundation';
 
+
 export const styles = {
-  nodeItemListRoot: css({
+  nodeItemListRoot: style({
   }),
-  nodeItemListHeader: css({
+  nodeItemListHeader: style({
     paddingTop: 8,
     textAlign: 'center',
     fontSize: '1.2rem',
     textTransform: 'uppercase',
     color: colors.gray400,
   }),
-  nodeItemList: css({
+  nodeItemList: style({
     display: 'flex',
     flexDirection: 'column',
     gap: 8,

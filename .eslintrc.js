@@ -26,7 +26,6 @@ module.exports = {
     'import',
     'react',
     'jsx-a11y',
-    '@emotion',
   ],
   settings: {
     react: {

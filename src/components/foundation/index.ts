@@ -1,1 +1,1 @@
-export { colors } from './colors.style';
+export { colors } from './colors';

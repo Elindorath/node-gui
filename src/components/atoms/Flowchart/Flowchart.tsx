@@ -12,6 +12,7 @@ const nodeTypes = {
 
 const initialNodes: Array<Node> = [
   { id: '1', type: 'node', position: { x: 0, y: 0 }, data: { value: 123 } },
+  { id: '2', type: 'node', position: { x: 300, y: 0 }, data: { value: 123 } },
 ];
 
 const initialEdges: Array<Edge> = [];
@@ -49,6 +50,7 @@ export const Flowchart = () => {
       edges={edges}
       onEdgesChange={onEdgesChange}
       onConnect={onConnect}
+      proOptions={{ hideAttribution: true }}
     >
       <Background />
       <Controls />

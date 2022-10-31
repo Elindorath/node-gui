@@ -1,7 +1,8 @@
-import { css } from '@emotion/react';
+import { style } from '@vanilla-extract/css';
+
 
 export const styles = {
-  nodeHeader: css({
+  nodeHeader: style({
     fontSize: 14,
     borderBottomWidth: 2,
     borderBottomColor: '#C53030',

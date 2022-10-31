@@ -1,6 +1,6 @@
 import { Handle, Position } from 'reactflow';
 
-import { styles } from './NodeOutput.style';
+import { styles } from './NodeOutput.css';
 
 
 type NodeOutputProps = {
@@ -10,9 +10,9 @@ type NodeOutputProps = {
 
 export function NodeOutput({ label, isForwardable }: NodeOutputProps) {
   return (
-    <div css={styles.nodeOutput}>
-      <div css={styles.nodeItemLabel}>{label}</div>
-      {isForwardable && <Handle type="source" position={Position.Right} id="label" css={styles.nodeItemHandle} />}
+    <div className={styles.nodeOutput}>
+      <div className={styles.nodeItemLabel}>{label}</div>
+      {isForwardable && <Handle type="source" position={Position.Right} id="label" className={styles.nodeItemHandle} />}
     </div>
   );
 }

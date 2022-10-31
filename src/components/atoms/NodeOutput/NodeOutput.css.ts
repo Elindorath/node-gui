@@ -1,8 +1,10 @@
-import { css } from '@emotion/react';
+import { style } from '@vanilla-extract/css';
+
 import { colors } from 'components/foundation';
 
+
 export const styles = {
-  nodeOutput: css({
+  nodeOutput: style({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'end',
@@ -12,10 +14,10 @@ export const styles = {
     height: 32,
     position: 'relative',
   }),
-  nodeItemLabel: css({
+  nodeItemLabel: style({
     fontSize: '1.4rem',
   }),
-  nodeItemHandle: css({
+  nodeItemHandle: style({
     height: 16,
     width: 16,
     borderRadius: '50%',
