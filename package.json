@@ -6,7 +6,7 @@
   "author": "Joachim Westphal <elindorath@gmail.com>",
   "license": "MIT",
   "engines": {
-    "node": "18.11.0"
+    "node": "20.6.1"
   },
   "scripts": {
     "dev": "NODE_ENV=development webpack serve --config webpack.config.ts --mode development",
