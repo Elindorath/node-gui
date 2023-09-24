@@ -1,12 +1,16 @@
-import { Layout } from 'components/atoms/Layout/Layout';
+import { ReactFlowProvider } from 'reactflow';
 
-import 'reactflow/dist/base.css';
+import { FlowProvider } from 'hooks';
+
+import { Layout } from 'components/atoms/Layout/Layout';
 
 
 export const App = () => {
   return (
-    <>
-      <Layout />
-    </>
+    <ReactFlowProvider>
+      <FlowProvider>
+        <Layout />
+      </FlowProvider>
+    </ReactFlowProvider>
   );
 };

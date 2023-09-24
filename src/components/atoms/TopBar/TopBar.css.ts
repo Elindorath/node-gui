@@ -1,6 +1,6 @@
 import { style } from '@vanilla-extract/css';
 
-import { colors } from 'components/foundation';
+import { colors } from 'components/foundation/colors.css';
 
 
 export const styles = {
@@ -8,7 +8,10 @@ export const styles = {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
+    alignItems: 'center',
     padding: 8,
+    borderRadius: 8,
+    backgroundColor: colors.gray800,
   }),
   topBarLeft:  style({}),
   topBarCenter:  style({}),

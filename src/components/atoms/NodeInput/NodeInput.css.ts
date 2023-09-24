@@ -1,33 +1,75 @@
 import { style } from '@vanilla-extract/css';
+import { recipe } from '@vanilla-extract/recipes';
 
-import { colors } from 'components/foundation';
+import { colors } from 'components/foundation/colors.css';
 
+
+const nodeInput = recipe({
+  base: {
+    display: 'flex',
+    paddingBottom: 8,
+    minHeight: 32,
+    gap: 4,
+  },
+  variants: {
+    withChildren: {
+      true: {
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'start',
+        paddingTop: 4,
+      },
+      false: {
+        flexDirection: 'row-reverse',
+        alignItems: 'center',
+        justifyContent: 'start',
+        paddingTop: 8,
+      },
+    },
+  },
+});
+
+const body = recipe({
+  base: {
+    position: 'relative',
+  },
+  variants: {
+    controllable: {
+      true: { paddingLeft: 16, paddingRight: 8 },
+      false: { paddingLeft: 8, paddingRight: 8 },
+    },
+    withChildren: {
+      true: { width: '100%' },
+      false: { width: 12 },
+    },
+  },
+  compoundVariants: [
+    {
+      variants: {
+        controllable: true,
+        withChildren: false,
+      },
+      style: {
+        paddingLeft: 0,
+        paddingRight: 0,
+      },
+    },
+  ],
+});
 
 export const styles = {
-  nodeInput: style({
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'end',
-    justifyContent: 'center',
-    paddingLeft: 16,
-    paddingRight: 16,
-    height: 32,
-    position: 'relative',
-  }),
+  nodeInput,
   nodeItemLabel: style({
-    fontSize: '1.4rem',
+    selectors: {
+      [`${nodeInput({ withChildren: false }).split(' ').pop()} &`]: {
+        fontSize: '1.4rem',
+        fontWeight: 300,
+      },
+      [`${nodeInput({ withChildren: true }).split(' ').pop()} &`]: {
+        fontSize: '1rem',
+        fontWeight: 300,
+      },
+    },
   }),
-  nodeItemHandle: style({
-    height: 16,
-    width: 16,
-    borderRadius: '50%',
-    position: 'absolute',
-    top: '50%',
-    left: -8,
-    // transform: 'translate(-50%, -50%)',
-    backgroundColor: colors.red,
-    boxShadow: '0 0 0 1px rgba(0, 0, 0, 0.25), 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
-    border: 0,
-    cursor: 'default!important',
-  }),
+  body,
 };

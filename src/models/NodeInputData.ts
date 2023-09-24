@@ -1,13 +1,23 @@
-export class NodeInput {
+import type { NodeIOType } from './NodeIO';
+
+type NodeInputDataParams = {
   label: string;
-  type: 'filePath' | 'color';
+  type: NodeIOType;
   value: unknown;
-  isControllable: boolean;
-  isCustomizable: boolean;
+  isControllable?: boolean;
+  isCustomizable?: boolean;
+};
+
+export class NodeInputData {
+  label: string;
+  type: NodeIOType;
+  value: unknown;
+  isControllable?: boolean;
+  isCustomizable?: boolean;
 
   isControlled = false;
 
-  constructor({ label, type, isControllable, isCustomizable }) {
+  constructor({ label, type, isControllable, isCustomizable }: NodeInputDataParams) {
     if (!isControllable && !isCustomizable) {
       throw new Error('The NodeInput is neither controllable nor customizable');
     }

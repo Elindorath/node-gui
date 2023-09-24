@@ -1,5 +1,5 @@
 import { defineProperties, createSprinkles } from '@vanilla-extract/sprinkles';
-import { colors } from './colors';
+import { colors } from './colors.css';
 
 
 // const properties = defineProperties({

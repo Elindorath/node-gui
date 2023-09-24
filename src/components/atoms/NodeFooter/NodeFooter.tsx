@@ -1,8 +1,10 @@
+import { memo } from 'react';
+
 import { styles } from './NodeFooter.css';
 
 
-export function NodeFooter() {
+export const NodeFooter = memo(function NodeFooter() {
   return (
     <div className={styles.nodeFooter}></div>
   );
-}
+});

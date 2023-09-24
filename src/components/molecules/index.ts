@@ -1,1 +1,2 @@
-export { Node } from './Node/Node';
+export { CustomNode } from './CustomNode/CustomNode';
+export { CustomEdge } from './CustomEdge/CustomEdge';

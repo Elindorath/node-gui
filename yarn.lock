@@ -1189,7 +1189,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.20.7":
+"@babel/runtime@^7.18.9", "@babel/runtime@^7.20.7":
   version "7.22.15"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.22.15.tgz#38f46494ccf6cf020bd4eed7124b425e83e523b8"
   integrity sha512-T0O+aa+4w0u06iNmapipJXMV4HoUir03hpx3/YqXXhu9xim3w+dVphjFWl1OH8NbZHw5Lbm9k45drDkgq2VNNA==
@@ -1329,39 +1329,6 @@
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@fastify/deepmerge/-/deepmerge-1.3.0.tgz#8116858108f0c7d9fd460d05a7d637a13fe3239a"
   integrity sha512-J8TOSBq3SoZbDhM9+R/u77hP93gz/rajSA+K2kGyijPpORPWUXHUpTaleoj+92As0S9uPRP7Oi8IqMf0u+ro6A==
-
-"@fortawesome/fontawesome-common-types@6.4.2":
-  version "6.4.2"
-  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.4.2.tgz#1766039cad33f8ad87f9467b98e0d18fbc8f01c5"
-  integrity sha512-1DgP7f+XQIJbLFCTX1V2QnxVmpLdKdzzo2k8EmvDOePfchaIGQ9eCHj2up3/jNEbZuBqel5OxiaOJf37TWauRA==
-
-"@fortawesome/fontawesome-svg-core@^6.4.2":
-  version "6.4.2"
-  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.4.2.tgz#37f4507d5ec645c8b50df6db14eced32a6f9be09"
-  integrity sha512-gjYDSKv3TrM2sLTOKBc5rH9ckje8Wrwgx1CxAPbN5N3Fm4prfi7NsJVWd1jklp7i5uSCVwhZS5qlhMXqLrpAIg==
-  dependencies:
-    "@fortawesome/fontawesome-common-types" "6.4.2"
-
-"@fortawesome/free-regular-svg-icons@^6.4.2":
-  version "6.4.2"
-  resolved "https://registry.yarnpkg.com/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-6.4.2.tgz#aee79ed76ce5dd04931352f9d83700761b8b1b25"
-  integrity sha512-0+sIUWnkgTVVXVAPQmW4vxb9ZTHv0WstOa3rBx9iPxrrrDH6bNLsDYuwXF9b6fGm+iR7DKQvQshUH/FJm3ed9Q==
-  dependencies:
-    "@fortawesome/fontawesome-common-types" "6.4.2"
-
-"@fortawesome/free-solid-svg-icons@^6.4.2":
-  version "6.4.2"
-  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-6.4.2.tgz#33a02c4cb6aa28abea7bc082a9626b7922099df4"
-  integrity sha512-sYwXurXUEQS32fZz9hVCUUv/xu49PEJEyUOsA51l6PU/qVgfbTb2glsTEaJngVVT8VqBATRIdh7XVgV1JF1LkA==
-  dependencies:
-    "@fortawesome/fontawesome-common-types" "6.4.2"
-
-"@fortawesome/react-fontawesome@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-0.2.0.tgz#d90dd8a9211830b4e3c08e94b63a0ba7291ddcf4"
-  integrity sha512-uHg75Rb/XORTtVt7OS9WoK8uM276Ufi7gCzshVWkUJbHhh3svsUUeqXerrM96Wm7fRiDzfKRwSoahhMIkGAYHw==
-  dependencies:
-    prop-types "^15.8.1"
 
 "@humanwhocodes/config-array@^0.11.11":
   version "0.11.11"
@@ -1525,28 +1492,34 @@
   resolved "https://registry.yarnpkg.com/@react-dnd/shallowequal/-/shallowequal-4.0.2.tgz#d1b4befa423f692fa4abf1c79209702e7d8ae4b4"
   integrity sha512-/RVXdLvJxLg4QKvMoM5WlwNR9ViO9z8B/qPcc+C0Sa/teJY7QG7kJ441DwzOjMYEY7GmU4dj5EcGHIkKZiQZCA==
 
-"@reactflow/background@11.2.8":
-  version "11.2.8"
-  resolved "https://registry.yarnpkg.com/@reactflow/background/-/background-11.2.8.tgz#aa83f87b7d65442b52732f0a04d9da981f978265"
-  integrity sha512-5o41N2LygiNC2/Pk8Ak2rIJjXbKHfQ23/Y9LFsnAlufqwdzFqKA8txExpsMoPVHHlbAdA/xpQaMuoChGPqmyDw==
-  dependencies:
-    "@reactflow/core" "11.8.3"
-    classcat "^5.0.3"
-    zustand "^4.4.1"
+"@react-icons/all-files@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@react-icons/all-files/-/all-files-4.1.0.tgz#477284873a0821928224b6fc84c62d2534d6650b"
+  integrity sha512-hxBI2UOuVaI3O/BhQfhtb4kcGn9ft12RWAFVMUeNjqqhLsHvFtzIkFaptBJpFDANTKoDfdVoHTKZDlwKCACbMQ==
 
-"@reactflow/controls@11.1.19":
-  version "11.1.19"
-  resolved "https://registry.yarnpkg.com/@reactflow/controls/-/controls-11.1.19.tgz#a8bc4b4eafc10d5d230db5286753e867bcf35e5b"
-  integrity sha512-Vo0LFfAYjiSRMLEII/aeBo+1MT2a0Yc7iLVnkuRTLzChC0EX+A2Fa+JlzeOEYKxXlN4qcDxckRNGR7092v1HOQ==
+"@reactflow/background@11.0.4":
+  version "11.0.4"
+  resolved "https://registry.yarnpkg.com/@reactflow/background/-/background-11.0.4.tgz#72fabec861d8fb913cdc35e6eccdbe840be694a5"
+  integrity sha512-AACdU1B63BJCL0mO6I2ceehkv0ijKxzhh4UMc0JQs8sSgbAQjvnMSt/VcjIJ1e8V4o/wjPejj3xWm2Jxsv0Qhw==
   dependencies:
-    "@reactflow/core" "11.8.3"
+    "@babel/runtime" "^7.18.9"
+    "@reactflow/core" "11.2.0"
     classcat "^5.0.3"
-    zustand "^4.4.1"
+    zustand "^4.1.1"
 
-"@reactflow/core@11.8.3":
-  version "11.8.3"
-  resolved "https://registry.yarnpkg.com/@reactflow/core/-/core-11.8.3.tgz#03ffeb06fbc141b8f786cb4ac8169f8a51a5f00e"
-  integrity sha512-y6DN8Wy4V4KQBGHFqlj9zWRjLJU6CgdnVwWaEA/PdDg/YUkFBMpZnXqTs60czinoA2rAcvsz50syLTPsj5e+Wg==
+"@reactflow/controls@11.0.4":
+  version "11.0.4"
+  resolved "https://registry.yarnpkg.com/@reactflow/controls/-/controls-11.0.4.tgz#12ceae0023de96ab1371f2184f5bf8574dbf640f"
+  integrity sha512-NLycgcW+hS2CcZiUqvTOXkug+UMmq7dzORxdzxosvBI0b1La+xNXi+UxVMlMAYrNZH3lm+SWyftksXQ/r010bQ==
+  dependencies:
+    "@babel/runtime" "^7.18.9"
+    "@reactflow/core" "11.2.0"
+    classcat "^5.0.3"
+
+"@reactflow/core@11.2.0":
+  version "11.2.0"
+  resolved "https://registry.yarnpkg.com/@reactflow/core/-/core-11.2.0.tgz#9cc1c3a23796905070baa77052d7622dc233b59c"
+  integrity sha512-8rYp9bQON7MMtHZ3opU37Bfp4NaGGrJFeu+tcokz9bQZcGo43oCKl8xkURn8HlC8FnpVwpQ7e3DBdsOtnEbaEg==
   dependencies:
     "@types/d3" "^7.4.0"
     "@types/d3-drag" "^3.0.1"
@@ -1556,40 +1529,21 @@
     d3-drag "^3.0.0"
     d3-selection "^3.0.0"
     d3-zoom "^3.0.0"
-    zustand "^4.4.1"
+    zustand "^4.1.1"
 
-"@reactflow/minimap@11.6.3":
-  version "11.6.3"
-  resolved "https://registry.yarnpkg.com/@reactflow/minimap/-/minimap-11.6.3.tgz#1cfddd87e9afd23ad704167988c66bd683ffc5d2"
-  integrity sha512-PSA28dk09RnBHOA1zb45fjQXz3UozSJZmsIpgq49O3trfVFlSgRapxNdGsughWLs7/emg2M5jmi6Vc+ejcfjvQ==
+"@reactflow/minimap@11.1.0":
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/@reactflow/minimap/-/minimap-11.1.0.tgz#ee5770a3dab62e099d8330a998f71372cacab973"
+  integrity sha512-igquYRc9QdV5hu7KZiBjQgynvy/oMH5+i5eDvI0aLSkLC68NVnHFFpEZlk4bSVav+nGeWbHOZK/tryd3Sa39TQ==
   dependencies:
-    "@reactflow/core" "11.8.3"
+    "@babel/runtime" "^7.18.9"
+    "@reactflow/core" "11.2.0"
     "@types/d3-selection" "^3.0.3"
     "@types/d3-zoom" "^3.0.1"
     classcat "^5.0.3"
     d3-selection "^3.0.0"
     d3-zoom "^3.0.0"
-    zustand "^4.4.1"
-
-"@reactflow/node-resizer@2.1.5":
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/@reactflow/node-resizer/-/node-resizer-2.1.5.tgz#f4033946ccc9cc8f47a94ed93f10a32befd546f1"
-  integrity sha512-z/hJlsptd2vTx13wKouqvN/Kln08qbkA+YTJLohc2aJ6rx3oGn9yX4E4IqNxhA7zNqYEdrnc1JTEA//ifh9z3w==
-  dependencies:
-    "@reactflow/core" "11.8.3"
-    classcat "^5.0.4"
-    d3-drag "^3.0.0"
-    d3-selection "^3.0.0"
-    zustand "^4.4.1"
-
-"@reactflow/node-toolbar@1.2.7":
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/@reactflow/node-toolbar/-/node-toolbar-1.2.7.tgz#cf6639945dc42b42416f293d6132e1187bca3424"
-  integrity sha512-vs+Wg1tjy3SuD7eoeTqEtscBfE9RY+APqC28urVvftkrtsN7KlnoQjqDG6aE45jWP4z+8bvFizRWjAhxysNLkg==
-  dependencies:
-    "@reactflow/core" "11.8.3"
-    classcat "^5.0.3"
-    zustand "^4.4.1"
+    zustand "^4.1.1"
 
 "@tsconfig/node10@^1.0.7":
   version "1.0.9"
@@ -2138,23 +2092,6 @@
   dependencies:
     "@babel/core" "^7.13.10"
 
-"@vanilla-extract/css@^1.13.0":
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.13.0.tgz#85f521d428f55b0e9599675033caba81194cc6c0"
-  integrity sha512-JFFBXhnJrPlGqHBabagXqo5ghXw9mtV270ycIGyLDZG8NAK5eRwAYkMowAxuzK7wZSm67GnETWYB7b0AUmyttg==
-  dependencies:
-    "@emotion/hash" "^0.9.0"
-    "@vanilla-extract/private" "^1.0.3"
-    ahocorasick "1.0.2"
-    chalk "^4.1.1"
-    css-what "^6.1.0"
-    cssesc "^3.0.0"
-    csstype "^3.0.7"
-    deep-object-diff "^1.1.9"
-    deepmerge "^4.2.2"
-    media-query-parser "^2.0.2"
-    outdent "^0.8.0"
-
 "@vanilla-extract/css@^1.7.2":
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.9.1.tgz#337b79faa5f8f98915a90c3fe3c30b54be746c09"
@@ -2172,7 +2109,24 @@
     media-query-parser "^2.0.2"
     outdent "^0.8.0"
 
-"@vanilla-extract/dynamic@^2.0.3":
+"@vanilla-extract/css@^1.9.1":
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/css/-/css-1.13.0.tgz#85f521d428f55b0e9599675033caba81194cc6c0"
+  integrity sha512-JFFBXhnJrPlGqHBabagXqo5ghXw9mtV270ycIGyLDZG8NAK5eRwAYkMowAxuzK7wZSm67GnETWYB7b0AUmyttg==
+  dependencies:
+    "@emotion/hash" "^0.9.0"
+    "@vanilla-extract/private" "^1.0.3"
+    ahocorasick "1.0.2"
+    chalk "^4.1.1"
+    css-what "^6.1.0"
+    cssesc "^3.0.0"
+    csstype "^3.0.7"
+    deep-object-diff "^1.1.9"
+    deepmerge "^4.2.2"
+    media-query-parser "^2.0.2"
+    outdent "^0.8.0"
+
+"@vanilla-extract/dynamic@^2.0.2":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/dynamic/-/dynamic-2.0.3.tgz#44b4e018cbdfb6af3d27e73c78b38617dfe419ad"
   integrity sha512-Rglfw2gXAYiBzAQ4jgUG7rBgE2c88e/zcG27ZVoIqMHVq56wf2C1katGMm1yFMNBgzqM7oBNYzz4YOMzznydkg==
@@ -2205,7 +2159,7 @@
   resolved "https://registry.yarnpkg.com/@vanilla-extract/recipes/-/recipes-0.5.0.tgz#e541431510b2182596af8300e16ef85d9f27ea87"
   integrity sha512-NfdZ8XyqCDG2RsO3FmYPALDMKg5045dRD97NbBb0Fog3LMDVXZxYgDOct5FAWob8U6W4GbhVpRZt1X9hNnH6fA==
 
-"@vanilla-extract/sprinkles@^1.6.1":
+"@vanilla-extract/sprinkles@^1.5.0":
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/sprinkles/-/sprinkles-1.6.1.tgz#2c8a832757a0d8104dc6bd5d961db2c70d1dbdcb"
   integrity sha512-N/RGKwGAAidBupZ436RpuweRQHEFGU+mvAqBo8PRMAjJEmHoPDttV8RObaMLrJHWLqvX+XUMinHUnD0hFRQISw==
@@ -2997,7 +2951,7 @@ chrome-trace-event@^1.0.2:
   resolved "https://registry.yarnpkg.com/chrome-trace-event/-/chrome-trace-event-1.0.3.tgz#1015eced4741e15d06664a957dbbf50d041e26ac"
   integrity sha512-p3KULyQg4S7NIHixdwbGX+nFHkoBiA4YQmyWtjb8XngSKV124nJmRysgAeujbUVb15vh+RvFUfCPqU7rXk+hZg==
 
-classcat@^5.0.3, classcat@^5.0.4:
+classcat@^5.0.3:
   version "5.0.4"
   resolved "https://registry.yarnpkg.com/classcat/-/classcat-5.0.4.tgz#e12d1dfe6df6427f260f03b80dc63571a5107ba6"
   integrity sha512-sbpkOw6z413p+HDGcBENe498WM9woqWHiJxCq7nvmxe9WmrUmqfAcxpIwAiMtM5Q3AhYkzXcNQHqsWq0mND51g==
@@ -5808,6 +5762,11 @@ react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+react-icons@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.6.0.tgz#f83eda179af5d02c047449a20b702c858653d397"
+  integrity sha512-rR/L9m9340yO8yv1QT1QurxWQvWpbNHqVX0fzMln2HEb9TEIrQRGsqiNFQfiv9/JEUbyHmHPlNTB2LWm2Ttz0g==
+
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -5825,17 +5784,15 @@ react@^18.2.0:
   dependencies:
     loose-envify "^1.1.0"
 
-reactflow@^11.8.3:
-  version "11.8.3"
-  resolved "https://registry.yarnpkg.com/reactflow/-/reactflow-11.8.3.tgz#ad5cdf22408298956c92ab652929ff92206af9dc"
-  integrity sha512-wuVxJOFqi1vhA4WAEJLK0JWx2TsTiWpxTXTRp/wvpqKInQgQcB49I2QNyNYsKJCQ6jjXektS7H+LXoaVK/pG4A==
+reactflow@^11.2.0:
+  version "11.2.0"
+  resolved "https://registry.yarnpkg.com/reactflow/-/reactflow-11.2.0.tgz#cb670ae07fe8cc39ec08bbc78e716e490a3e255a"
+  integrity sha512-wrpcpY1J1QY87meJXrd7Y1jZQ9s0VvXudpeMrXeq1HEgYOyYmZrg2oxv4ck9m9liq0Urz9z/eWrIQTkdb/6P5A==
   dependencies:
-    "@reactflow/background" "11.2.8"
-    "@reactflow/controls" "11.1.19"
-    "@reactflow/core" "11.8.3"
-    "@reactflow/minimap" "11.6.3"
-    "@reactflow/node-resizer" "2.1.5"
-    "@reactflow/node-toolbar" "1.2.7"
+    "@reactflow/background" "11.0.4"
+    "@reactflow/controls" "11.0.4"
+    "@reactflow/core" "11.2.0"
+    "@reactflow/minimap" "11.1.0"
 
 readable-stream@^2.0.1:
   version "2.3.7"
@@ -7129,7 +7086,7 @@ yocto-queue@^1.0.0:
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-1.0.0.tgz#7f816433fb2cbc511ec8bf7d263c3b58a1a3c251"
   integrity sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==
 
-zustand@^4.4.1:
+zustand@^4.1.1, zustand@^4.4.1:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/zustand/-/zustand-4.4.1.tgz#0cd3a3e4756f21811bd956418fdc686877e8b3b0"
   integrity sha512-QCPfstAS4EBiTQzlaGP1gmorkh/UL1Leaj2tdj+zZCZ/9bm0WS7sI2wnfD5lpOszFqWJ1DcPnGoY8RDL61uokw==

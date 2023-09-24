@@ -15,8 +15,6 @@ import tsConfig from './tsconfig.json';
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
-console.log('DEVELOPMENT', isDevelopment);
-
 const distDirectory = path.resolve(__dirname, './dist');
 const baseDirectory = path.resolve(__dirname, tsConfig.compilerOptions.baseUrl);
 const directoriesInBase = fs.readdirSync(baseDirectory, { withFileTypes: true })
@@ -64,7 +62,12 @@ const config: Webpack.Configuration = {
       {
         test: /\.vanilla\.css$/i,
         use: [
-          require.resolve('style-loader'),
+          {
+            loader: require.resolve('style-loader'),
+            options: {
+              insert: insertCss,
+            },
+          },
           // MiniCssExtractPlugin.loader,
           {
             loader: require.resolve('css-loader'),
@@ -76,7 +79,13 @@ const config: Webpack.Configuration = {
         test: /\.css$/i,
         exclude: /\.vanilla\.css$/i,
         use: [
-          require.resolve('style-loader'),
+          {
+            loader: require.resolve('style-loader'),
+            options: {
+              insert: insertCss,
+            },
+          },
+          // MiniCssExtractPlugin.loader,
           require.resolve('css-loader'),
         ],
       },
@@ -90,5 +99,15 @@ const config: Webpack.Configuration = {
     }), {}),
   },
 };
+
+/* eslint-disable */
+/* @ts-ignore */
+function insertCss(element) {
+  var parent = document.querySelector('head');
+
+  /* @ts-ignore */
+  parent.insertBefore(element, parent.firstChild);
+}
+/* eslint-enable */
 
 export default config;

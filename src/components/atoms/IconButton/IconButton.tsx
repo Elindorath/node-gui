@@ -1,26 +1,25 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { assignInlineVars } from '@vanilla-extract/dynamic';
 
 import { styles } from './IconButton.css';
 
-import type { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import type Color from 'colorjs.io';
+import type { IconType } from 'react-icons';
 
 
 type IconButtonProps = {
-  icon: IconDefinition;
+  Icon: IconType;
   color?: InstanceType<typeof Color>;
 };
 
-export const IconButton = ({ icon, color }: IconButtonProps) => {
+export const IconButton = ({ Icon, color }: IconButtonProps) => {
   return (
     <button
       className={styles.iconButton}
       style={assignInlineVars({
-        [styles.vars.color]: color ? color.srgb.join(', ') : '',
+        [styles.vars.color]: color ? color.srgb.map((c) => `${c * 100}%`).join(', ') : '',
       })}
     >
-      <FontAwesomeIcon icon={icon} className={styles.icon} />
+      <Icon className={styles.icon} />
     </button>
   );
 };

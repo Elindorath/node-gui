@@ -1,11 +1,11 @@
 import { style } from '@vanilla-extract/css';
 
-import { colors } from 'components/foundation';
+import { colors } from 'components/foundation/colors.css';
 
 
 export const styles = {
   nodeItem: style({
-    backgroundColor: colors.gray600,
+    backgroundColor: colors.gray700,
     minHeight: 30,
   }),
 };

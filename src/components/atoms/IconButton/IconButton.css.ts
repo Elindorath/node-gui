@@ -10,6 +10,9 @@ const iconButton = style({
   borderWidth: 1,
   borderStyle: 'solid',
   borderColor: `rgb(${color})`,
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
 
   ':hover': {
     borderColor: `rgba(${color}, 0.8)`,

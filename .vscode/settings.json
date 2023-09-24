@@ -4,6 +4,8 @@
     "colorjs",
     "fontawesome",
     "fortawesome",
+    "nodrag",
+    "nowheel",
     "reactflow",
     "usehooks"
   ]

@@ -7,12 +7,12 @@ import { styles } from './Layout.css';
 
 export const Layout = () => {
   return (
-    <>
+    <div className={styles.layout}>
       <TopBar />
       <div className={styles.layoutBody}>
         <Menu />
         <Flowchart />
       </div>
-    </>
+    </div>
   );
 };
