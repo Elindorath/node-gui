@@ -8,5 +8,6 @@ export const nodeIOColorMap = {
   multilineString: colors.green,
   string: colors.blue,
   directory: colors.pink,
+  number: colors.yellow,
   undefined: colors.gray500,
 };

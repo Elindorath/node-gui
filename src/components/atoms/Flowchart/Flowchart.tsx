@@ -14,7 +14,7 @@ import { CustomEdge, CustomNode } from 'components/molecules';
 
 import { styles } from './Flowchart.css';
 
-import type { MouseEvent, DragEvent} from 'react';
+import type { MouseEvent, TouchEvent, DragEvent} from 'react';
 import type { Connection, Edge, EdgeChange, Node, NodeChange , OnConnectStartParams } from 'reactflow';
 
 import type { NodeIOType } from 'models/NodeIO';
@@ -82,7 +82,7 @@ export const Flowchart = () => {
   );
 
   const onConnectStart = useCallback(
-    (event: MouseEvent, params: OnConnectStartParams) => {
+    (event: MouseEvent | TouchEvent, params: OnConnectStartParams) => {
       const { nodeId, handleId } = parseHandleId(params.handleId as string);
       const node = nodes.find(({ id }) => id === nodeId) as NodeWithData;
 

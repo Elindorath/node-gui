@@ -1,8 +1,6 @@
 import { style } from '@vanilla-extract/css';
 import { recipe } from '@vanilla-extract/recipes';
 
-import { colors } from 'components/foundation/colors.css';
-
 
 const nodeInput = recipe({
   base: {

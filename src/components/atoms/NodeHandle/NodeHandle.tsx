@@ -1,4 +1,4 @@
-import { Connection, Handle, useEdges, useNodes } from 'reactflow';
+import { Handle, useEdges } from 'reactflow';
 import { styles } from './NodeHandle.css';
 
 import { assignInlineVars } from '@vanilla-extract/dynamic';

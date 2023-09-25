@@ -1,3 +1,4 @@
+import { StrictMode } from 'react';
 import { ReactFlowProvider } from 'reactflow';
 
 import { FlowProvider } from 'hooks';
@@ -5,12 +6,14 @@ import { FlowProvider } from 'hooks';
 import { Layout } from 'components/atoms/Layout/Layout';
 
 
-export const App = () => {
+export function App() {
   return (
-    <ReactFlowProvider>
-      <FlowProvider>
-        <Layout />
-      </FlowProvider>
-    </ReactFlowProvider>
+    <StrictMode>
+      <ReactFlowProvider>
+        <FlowProvider>
+          <Layout />
+        </FlowProvider>
+      </ReactFlowProvider>
+    </StrictMode>
   );
-};
+}
